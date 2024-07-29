@@ -128,6 +128,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-## Made with help of
+## Made with the help of
 * [python-telegram-bot](https://python-telegram-bot.org/)
 * [spotipy](https://pypi.org/project/spotipy/)
