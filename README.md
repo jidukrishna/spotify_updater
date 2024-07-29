@@ -1,10 +1,10 @@
 # 🎧Spotify Playlist Updater and Shuffler via Telegram
 
-A telegram bot to update or shuffle a playlist with songs from liked and shazam playlist.
-
+A telegram bot to update or shuffle a playlist with songs from liked and shazam playlist.<br> 
+* Disclaimer : there's alot of try and except statements because my internet doesn't always have full uptime. 
 <img src='https://raw.githubusercontent.com/jidukrishna/jidukrishna/main/Screenshot_20240730-005005_Telegram.jpg' height=500>
 
-## Description
+### Description
 
 A simple telegram bot that updates a main playlist (you have to make one) with your liked and shazam playlist. 
 This script makes use of spotipy and python-telegram-bot api inorder to achieve the task.
