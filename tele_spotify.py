@@ -25,9 +25,9 @@ keyboard = ReplyKeyboardMarkup([replies,["Alive💀???"]], one_time_keyboard=Fal
 
 
 # use for logging telegram logs (uncomment for telegram logs)
-# logging.basicConfig(
-#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
-# )
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+)
 
 #spotify authentication
 
