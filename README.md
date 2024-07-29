@@ -29,7 +29,7 @@ Alive option responds if the bot is online
 
 * Python3
   
-### Installing
+### Cloning repo
 ```
 git clone https://github.com/jidukrishna/spotify_updater.git
 ```
@@ -38,38 +38,96 @@ git clone https://github.com/jidukrishna/spotify_updater.git
 ### Executing program on linux
 
 * Installing prerequisites
+  ```
+  cd spotify_updater
+  python -m venv venv
+  . venv/bin/activate
+  pip install -r requirements.txt
+  ```
+* Running it
+  ```
+  python tele_spotify.py
+  ```
+* When you run for the first time a redirect url will be shown or logged into the terminal copy and paster in the given field.
+* After that start the bot and click on update to build the database
+* That's it (❁´◡`❁)
+
+
+### Executing program on windows
+
+* Installing prerequisites
+  ```
+  cd spotify_updater
+  python -m venv venv
+  venv/scripts/activate
+  pip install -r requirements.txt
+  ```
+* Running it (with the activated env)
+  ```
+  python tele_spotify.py
+  ```
+* When you run for the first time a redirect url will be shown or logged into the terminal copy and paster in the given field.
+* After that start the bot and click on update to build the database
+* That's it (❁´◡`❁)
+
+### Run on reboot for pi
+* Create a sh_spotify.sh file in spotify_updater folder and replace the necessary things
+  ```
+  #!/bin/bash
+  
+  source /home/<user_name>/spotify_updater/venv/bin/activate
+  
+  sleep 5
+  cd /home/<user_name>/spotify_updater
+  nohup python tele_spotify.py > /dev/null 2>&1 &
+  ```
+* Making it a executable
+  ```
+  sudo chmod +x sh_spotify.sh
+  ```
+* Adding to crontab for running on reboot
+  ```
+  sudo crontab -e 
+  ```
+* add this line at end of the file with your shell script path
+  ```
+  @reboot /home/<user_name>/spotify_updater/sh_spotify.sh
+  ```
+* reboot the pi ```sudo reboot```
 
 ## Help
+* It may take a few tries to get the spotify redirect url working.
+* Make sure your running from the correct path.
+* You can always see the logs and figure it out
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+## Author 🗿
+Jidu Krishna P J <br>
+Instagram : [@jidukrishnapj](https://www.instagram.com/jidukrishnapj/) <br>
+Github : [@jidukrishna](https://github.com/jidukrishna)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+```
+Copyright [2024] [Jidu Krishna P J]
 
-## Acknowledgments
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+## Made with help of
+* [python-telegram-bot](https://python-telegram-bot.org/)
+* [spotipy](https://pypi.org/project/spotipy/)
