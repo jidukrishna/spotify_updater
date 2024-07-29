@@ -120,7 +120,7 @@ def add_to_database(playlist="", table_name='all_spotify_user.db', liked=False, 
 
 
 # uses the existing main_songs tables and clear the spotify playlist and adds it randomly
-def randomize_songs(q="select uri from songs order by random()"):
+def randomize_songs():
     try:
         #add controls the adding and removing key
         def playlist_mod(add=False):
@@ -128,7 +128,7 @@ def randomize_songs(q="select uri from songs order by random()"):
             with sqlite3.connect(filename, check_same_thread=False) as db:
                 cur = db.cursor()
             if add:
-                cur.execute(q)
+                cur.execute("select uri from songs order by random()")
             else:
                 cur.execute("select uri from songs")
             song_counter = 0
