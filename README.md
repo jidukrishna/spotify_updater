@@ -1,4 +1,4 @@
-# Spotify Playlist Updater and Shuffler via Telegram
+# 🎧Spotify Playlist Updater and Shuffler via Telegram
 
 A telegram bot to update or shuffle a playlist with songs from liked and shazam playlist.
 
