@@ -2,6 +2,8 @@
 
 A telegram bot to update or shuffle a playlist with songs from liked and shazam playlist.
 
+<img src='https://raw.githubusercontent.com/jidukrishna/jidukrishna/main/Screenshot_20240730-005005_Telegram.jpg' height=500>
+
 ## Description
 
 A simple telegram bot that updates a main playlist (you have to make one) with your liked and shazam playlist. 
