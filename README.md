@@ -50,7 +50,7 @@ git clone https://github.com/jidukrishna/spotify_updater.git
   ```
   python tele_spotify.py
   ```
-* When you run for the first time a redirect url will be shown or logged into the terminal copy and paster in the given field.
+* When you run for the first time a redirect url will be shown or logged into the terminal copy and paste in the given field.
 * After that start the bot and click on update to build the database
 * That's it (❁´◡`❁)
 
