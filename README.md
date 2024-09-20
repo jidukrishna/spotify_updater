@@ -42,13 +42,13 @@ git clone https://github.com/jidukrishna/spotify_updater.git
 * Installing prerequisites
   ```
   cd spotify_updater
-  python -m venv venv
+  python3 -m venv venv
   . venv/bin/activate
   pip install -r requirements.txt
   ```
 * Running it
   ```
-  python tele_spotify.py
+  python3 tele_spotify.py
   ```
 * When you run for the first time a redirect url will be shown or logged into the terminal copy and paste in the given field.
 * After that start the bot and click on update to build the database
@@ -60,13 +60,13 @@ git clone https://github.com/jidukrishna/spotify_updater.git
 * Installing prerequisites
   ```
   cd spotify_updater
-  python -m venv venv
+  python3 -m venv venv
   venv/scripts/activate
   pip install -r requirements.txt
   ```
 * Running it (with the activated env)
   ```
-  python tele_spotify.py
+  python3 tele_spotify.py
   ```
 * When you run for the first time a redirect url will be shown or logged into the terminal copy and paster in the given field.
 * After that start the bot and click on update to build the database
@@ -81,7 +81,7 @@ git clone https://github.com/jidukrishna/spotify_updater.git
   
   sleep 5
   cd /home/<user_name>/spotify_updater
-  nohup python tele_spotify.py > /dev/null 2>&1 &
+  nohup python3 tele_spotify.py > /dev/null 2>&1 &
   ```
 * Making it a executable
   ```
